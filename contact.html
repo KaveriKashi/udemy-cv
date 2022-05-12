@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title></title>
+</head>
+
+<body>
+  <h3>Kaveri Kashi</h3>
+  <p>
+    308 Deforest<br />
+    Minneapolis USA
+  </p>
+  <p>
+    contact no: +61234567687
+  </p>
+  <p>
+    <em><a href="mailto:ks.kaveri5@gmail.com">click here to email me</a></em>
+  </p>
+  <hr noshade />
+  <form action="mailto:ks.kaveri5@gmail.com" method="post" enctype="text/plain">
+    <fieldset>
+      <legend> Your information:</legend>
+      <label>Your Name:</label>
+      <input type="text" name="yourName" autofocus placeholder="enter your name here" width="30px" height="20px"><br><br>
+      <label>Your Birthday:</label>
+      <input type="date" name="date" value="date" title="As per documents"><br><br>
+      <label>Your Email ID:</label>
+      <input type="email" name="email" placeholder="enter your email id here"> <br><br>
+      <label>Gender:</label>
+      <input type="radio" id="male" name="gender" value="Male"><label for="male">Male</label>
+      <input type="radio" id="female" name="gender" value="Female"><label for="female">Female</label><br><br>
+      <label for="nation">Nationality:</label>
+      <input list="nation">
+      <datalist id="nation">
+        <option value="India"></option>
+        <option value="UAE">UAE</option>
+        <option value="Germany">Germany</option>
+        <option value="USA">USA</option>
+      </datalist>
+    </fieldset>
+
+    <br><br>
+    <label for="check">I want a response email</label>
+    <input type="checkbox" id="check" name="response" value="Mail back" /><br><br>
+    <label>Leave your comments here:</label>
+    <textarea name="comment" rows="2" cols="20"></textarea>
+    <br><br>
+    <label id="question">Subject of your email:</label>
+    <select id="question" name="questions" size=3 multiple>
+      <option value="suggestion">suggestion</option>
+      <option value="feedback" selected>feedback</option>
+      <option value="information">information</option>
+      <option value="others">others</option>
+    </select><br><br><br><br>
+    <button type="button" name="hello" onclick="alert('how can we help you?')">Help</button>
+    <input type="reset">
+    <input type="submit" value="Submit">
+
+  </form>
+</body>
+
+</html>
